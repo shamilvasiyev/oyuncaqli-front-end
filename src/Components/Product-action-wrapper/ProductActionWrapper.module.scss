@@ -1,0 +1,130 @@
+.modal__action__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .modal__addToCart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      width: 35px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 22px;
+      font-family: visby-mid;
+    }
+  }
+
+  .modal__priceBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .modal__product__oldPrice {
+      font-size: 25px;
+      font-family: visby-bold;
+      text-decoration: line-through;
+      text-decoration-color: #f9632e;
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #f9632e;
+      border: 1px solid #f9632e;
+      border-radius: 7px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: visby-mid;
+      cursor: pointer;
+
+      .modal__product__price {
+        font-size: 45px;
+        margin-right: 5px;
+      }
+
+      p:last-child {
+        text-align: left;
+
+        span:first-child {
+          font-size: 15px;
+        }
+
+        span:last-child {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .modal__action__wrapper {
+    .modal__addToCart {
+      img {
+        width: 25px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .modal__priceBox {
+      .modal__product__oldPrice {
+        font-size: 20px;
+      }
+
+      button {
+        padding: 5px;
+
+        .modal__product__price {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal__action__wrapper {
+    .modal__addToCart {
+      img {
+        width: 20px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    .modal__priceBox {
+      .modal__product__oldPrice {
+        font-size: 18px;
+      }
+
+      button {
+        padding: 5px;
+
+        .modal__product__price {
+          font-size: 25px;
+        }
+
+        p:last-child {
+          span:first-child {
+            font-size: 12px;
+          }
+
+          span:last-child {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

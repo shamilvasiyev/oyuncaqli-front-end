@@ -1,13 +1,208 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: visby-bold;
+  src: url("Fonts/VisbyCF-Bold.otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: visby-mid;
+  src: url("Fonts/VisbyCF-Medium.otf");
+}
+
+@font-face {
+  font-family: visby-reg;
+  src: url("Fonts/VisbyCF-Regular.otf");
+}
+
+@font-face {
+  font-family: visby-thin;
+  src: url("Fonts/VisbyCF-Thin.otf");
+}
+
+@font-face {
+  font-family: visby-light;
+  src: url("Fonts/VisbyCF-Light.otf");
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  cursor: pointer;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.container {
+  width: 83.33%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.section_wrapper {
+  padding: 40px 0;
+}
+
+.section_header {
+  color: #f9632e;
+  font-size: 30px;
+  font-family: visby-bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer__header {
+  font-size: 25px;
+  font-family: visby-bold;
+  min-height: 55px;
+}
+
+/* .Toastify {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+@media screen and (max-width: 1024px) {
+  .footer__header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__header {
+    min-height: 40px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .footer__header {
+    font-size: 15px;
+  }
 }

@@ -1,0 +1,21 @@
+.notFound {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "visby-mid";
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  a {
+    color: #f9632e;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
